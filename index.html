@@ -1,24 +1,24 @@
 <!DOCTYPE html><html>
 
-<head> <title>base - LeafLet Preview</title>
+<head> 
+    <title>GEOG 458 Lab 4</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/leaflet.css" />
-    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" /> <style type="text/css">
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" /> 
+    <style type="text/css">
          #basemapslidercontainer {
              position: absolute;
              top: 50px;
              right: 10px;
              z-index: 1000;
-            
         }
 
          #basemapslider {
              font-size: 62.5%;
              margin: 14px;
              height: 125px;
-             width: 7px;
-            
+             width: 7px; 
         }
 
          #map {
@@ -26,21 +26,24 @@
              right: 10px;
              top: 10px;
              bottom: 10px;
-            
         }
+    </style> 
+</head>
 
-        
-    </style> <script src="js/jquery.min.js"></script> <script src="js/jquery-ui.min.js"></script> <script
-        src="js/leaflet.js"></script> <script>
+<body>
+    <script src="js/jquery-3.6.0.min.js"></script> 
+    <script src="js/jquery-ui.min.js"></script> 
+    <script src="js/leaflet.js"></script> 
+    <script>
         $(document).ready(function () {
                     $("#basemapslider").slider({
                         animate: true,
-                         value: 1,
-                         orientation: "vertical",
-                         min: 0,
-                         max: 1,
-                         step: 0.1,
-                         slide: function (event, ui) {
+                        value: 1,
+                        orientation: "vertical",
+                        min: 0,
+                        max: 1,
+                        step: 0.1,
+                        slide: function (event, ui) {
                             mytile.setOpacity(ui.value);
                         }
                     });
@@ -70,7 +73,7 @@
                         'Basemap':baselayer},{'base':mytile}).addTo(map);
                     })  
     </script>
-</head>
+</body>
 
 <body> <div id="map"> <div id="basemapslidercontainer"> <div id="basemapslider"> </div> </div> </div>
 </body>
