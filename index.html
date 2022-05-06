@@ -64,6 +64,15 @@
                 'tileSize': 256,
                 'attribution': 'Map tiles designed by Zoe Dooley</a>'
             });
+            
+            map.addSource('fire-theme-tiles', {
+                'type': 'raster',
+                'tiles': [
+                    'assets/fire-theme/{z}/{x}/{y}.png'
+                ],
+                'tileSize': 256,
+                'attribution': 'Map tiles designed by Zoe Dooley</a>'
+            });
 
 
             map.addLayer({
@@ -82,6 +91,12 @@
                 'id': 'base-fires_layer',
                 'type': 'raster',
                 'source': 'base-fire-tiles'
+            });
+
+            map.addLayer({
+                'id': 'fire_theme_layer',
+                'type': 'raster',
+                'source': 'fire-theme-tiles'
             });
         });
     </script>
