@@ -47,10 +47,25 @@
                 'attribution': 'Map tiles designed by Zoe Dooley</a>'
             });
 
+            map.addSource('base-fire-tiles', {
+                'type': 'raster',
+                'tiles': [
+                    'assets/base-fires/{z}/{x}/{y}.png'
+                ],
+                'tileSize': 256,
+                'attribution': 'Map tiles designed by Zoe Dooley</a>'
+            });
+
             map.addLayer({
                 'id': 'base_layer',
                 'type': 'raster',
                 'source': 'base-tiles'
+            });
+
+            map.addLayer({
+                'id': 'base-fires_layer',
+                'type': 'raster',
+                'source': 'base-fire-tiles'
             });
         });
     </script>
