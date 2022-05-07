@@ -18,7 +18,10 @@
             color: black
         }
         #map { 
-            position: absolute; top: 0; bottom: 0; width: 100%; }
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            width: 100%; }
     </style> 
 </head>
 
@@ -68,7 +71,7 @@
             map.addSource('fire-theme-tiles', {
                 'type': 'raster',
                 'tiles': [
-                    'assets/fire-theme/{z}/{x}/{y}.png'
+                    'assets/fires-theme/{z}/{x}/{y}.png'
                 ],
                 'tileSize': 256,
                 'attribution': 'Map tiles designed by Zoe Dooley</a>'
@@ -98,7 +101,18 @@
                 'type': 'raster',
                 'source': 'fire-theme-tiles'
             });
+
         });
+
+        const scale = new mapboxgl.ScaleControl({
+                maxWidth: 80,
+                unit: 'imperial'
+            });
+            
+            map.addControl(scale);
+            
+            scale.setUnit('imperial');
+
     </script>
 </body>
 
