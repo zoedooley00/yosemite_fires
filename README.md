@@ -8,7 +8,7 @@ This tileset is a [Mapbox](https://www.mapbox.com) basemap customized from the o
 
 ## Fire Layer
 ![](img/fires.png)
-This tileset was based off of geospatial data derived from the [van Wagtendonk K. 2020. 2019 Fire Ignition History for Yosemite National Park](https://irma.nps.gov/DataStore/Reference/Profile/2271859). The data shows ignition points in Yosemite from 1930 through 2019. Each point is a dark orange-red shade to resemble the color of fire.
+This tileset was based off of geospatial data derived from [van Wagtendonk K. 2020. 2019 Fire Ignition History for Yosemite National Park](https://irma.nps.gov/DataStore/Reference/Profile/2271859). The data shows ignition points in Yosemite from 1930 through 2019. Each point is a dark orange-red shade to resemble the color of fire.
 
 ## Base and Fire Layer
 ![](img/base-fires.png)
